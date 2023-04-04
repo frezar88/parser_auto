@@ -1,0 +1,8 @@
+2023-04-04 10:36:12.114802 --- check_all_status(70) --- name 'd' is not defined
+ --------------------
+2023-04-04 10:36:15.081375 --- check_all_status(70) --- name 'd' is not defined
+ --------------------
+2023-04-04 10:36:24.863918 --- check_all_status(70) --- name 'd' is not defined
+ --------------------
+2023-04-04 10:36:42.305592 --- check_all_status(70) --- name 'd' is not defined
+ --------------------

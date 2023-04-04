@@ -1,0 +1,45 @@
+from sqlalchemy import Table, Column, ForeignKey
+from sqlalchemy.sql.sqltypes import Integer, String, DateTime, Text, Boolean, Float, JSON
+from config.db import meta
+import datetime
+
+cars_options_model = Table(
+    'cars_options', meta,
+    Column('id', Integer, primary_key=True, autoincrement=True, index=True, ),
+    Column('cars_id', ForeignKey('cars.id', ondelete='CASCADE'), nullable=False),
+    Column('photo', JSON),
+    Column('abs', Boolean),
+    Column('esp', Boolean),
+    Column('anti_slip_system', Boolean),
+    Column('rain_detector', Boolean),
+    Column('rear_view_camera', Boolean),
+    Column('immobilizer', Boolean),
+    Column('alarm', Boolean),
+    Column('front_safebags', Boolean),
+    Column('side_safebags', Boolean),
+    Column('alloy_wheels', Boolean),
+    Column('rear_safebags', Boolean),
+    Column('railings', Boolean),
+    Column('parktronics', Boolean),
+    Column('panoramic_roof', Boolean),
+    Column('cruise_control', Boolean),
+    Column('electro_seat_adjustment', Boolean),
+    Column('steering_wheel_media_control', Boolean),
+    Column('media_screen', Boolean),
+    Column('navigator', Boolean),
+    Column('led_lights', Boolean),
+    Column('climate_control', Boolean),
+    Column('front_glass_lift', Boolean),
+    Column('seat_heating', Boolean),
+    Column('front_glass_heating', Boolean),
+    Column('mirror_heating', Boolean),
+    Column('conditioner', Boolean),
+    Column('aux_ipod', Boolean),
+    Column('bluetooth', Boolean),
+    Column('cd_mp3_player', Boolean),
+    Column('usb', Boolean),
+    Column('fog_lights', Boolean),
+    Column('xenon_lights', Boolean),
+    Column('hitch', Boolean),
+
+)
